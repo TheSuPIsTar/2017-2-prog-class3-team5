@@ -7,3 +7,10 @@ This text file describes brief but precise and complete specification of project
 
 - - -
 Your description start form next line and do not delete lines upto this point.
+
+--------------------------
+Lee Do hyeong - Readme.txt
+Bang Sung Won - Header
+Ko Eun Jin - Main
+Lee Seung Chan - Library 
+Kim Yong Hwan - Libraryc 
