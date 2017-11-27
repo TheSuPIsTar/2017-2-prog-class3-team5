@@ -36,16 +36,16 @@ int main()
 		head = append(head, cur);
 	}
 	//PRINT LIST
-	printf("1. 입력된 자료의 개수는 %d개 입니다.\n", cnt);
-	printf("2. 입력자료를 입력 역순으로 출력:\n");
+	printf("1. you have %d numbers inputed.\n", cnt);
+	printf("2. Reverse the numbers:\n");
 	reverseList(head);
-	printf("3. 입력자료의 중간위치에 있는 자료의 값 출력:\n");
+	printf("3. The middle number of the numbers:\n");
 	middleList(cur);
-	printf("4. 입력자료를 입력 순으로 출력:\n");
+	printf("4. the numbers:\n");
 	printList(head);
 	deleteList(head);
-	printf("입력자료에서 홀수번째 자료를 모두 삭제하였습니다.\n");
-	printf("5. 남은 자료를 순서대로 출력:\n");
+	printf("We deleted odd numbers.\n");
+	printf("5. the rest of the numbers:\n");
 	printList(head);
 
 	return 0;
