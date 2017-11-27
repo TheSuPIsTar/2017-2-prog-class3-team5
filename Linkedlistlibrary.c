@@ -8,6 +8,7 @@ LINK CreateNode(int input){
 	}
 	Cur->value = input;
 	Cur->next = NULL;
+	return Cur;
 }
 
 void DeleteOddNode(LINK head, int sizeofNode){
