@@ -26,6 +26,15 @@ void DeleteOddNode(LINK head, int sizeofNode){
 	}
 }
 
+void ReverseNode(LINK head){
+	LINK Cur = head;
+	while (Cur != NULL)
+	{
+		printf("%d\n", Cur->value);
+		Cur = Cur->next;
+	}
+}
+
 int LengthofNode(LINK head){
 	int length=1;
 	LINK Cur = head;
