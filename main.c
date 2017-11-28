@@ -1,6 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include "linkedlist.h"
+#include "Linkedlistlibrary.c"
+
+LINK CreateNode(int input)
+LINK append(LINK cur, LINK head)
+void DeleteOddNode(LINK head, int sizeofNode)
+void ReverseList(LINK head)
+int LengthofList(LINK head)
+void PrintList(LINK head)
+void PrintMiddleNode(LINK head, int lengthofNode)
+
 
 int main()
 {
