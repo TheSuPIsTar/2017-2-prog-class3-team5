@@ -13,8 +13,9 @@ typedef struct linked_list NODE; //struct linked_list를 NODE라 재정의한다.
 typedef NODE * LINK; //NODE 포인터를 링크로 재정의한다.
 
 LINK CreateNode(int input);
-void DeleteOddNode(LINK head, int sizeofNode);
-void ReverseList(LINK head);
+LINK DeleteOddNode(LINK head, int sizeofNode);
+void ReverseList(LINK head, int length);
 int LengthofList(LINK head);
 void PrintList(LINK head);
 void PrintMiddleNode(LINK head, int lengthofNode);
+LINK append(LINK cur, LINK head);

@@ -1,15 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include "linkedlist.h"
-#include "Linkedlistlibrary.c"
-
-LINK CreateNode(int input)
-LINK append(LINK cur, LINK head)
-void DeleteOddNode(LINK head, int sizeofNode)
-void ReverseList(LINK head)
-int LengthofList(LINK head)
-void PrintList(LINK head)
-void PrintMiddleNode(LINK head, int lengthofNode)
 
 
 int main()
@@ -27,21 +18,21 @@ int main()
 			printf("Error!");
 			exit(1);
 		}
-		head = append(head, cur);
+		head = append(cur, head);
 	}
 	int length = LengthofList(head);
 
 	//PRINT LIST
-	printf("1. you have %d numbers inputed.\n", length);
-	printf("2. Reverse the numbers:\n");
-	ReverseList(head);
-	printf("3. The middle number of the numbers:\n");
+	printf("1. you have %d numbers inputed.", length);
+	printf("\n2. Reverse the numbers:");
+	ReverseList(head, length);
+	printf("\n3. The middle number of the numbers:");
 	PrintMiddleNode(head, length);
-	printf("4. the numbers:\n");
-	printList(head);
-	printf("We deleted odd numbers.\n");
-	DeleteOddNode(head, length);
-	printf("5. the rest of the numbers:\n");
+	printf("\n4. the numbers:");
+	PrintList(head);
+	printf("\ndeleted odd numbers.");
+	head = DeleteOddNode(head, length);
+	printf("\n5. the rest of the numbers:\n");
 	PrintList(head);
 
 	return 0;
