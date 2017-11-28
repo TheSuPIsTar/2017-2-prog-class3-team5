@@ -11,6 +11,25 @@ LINK CreateNode(int input){
 	return Cur;
 }
 
+LINK append(LINK cur, LINK head)
+{
+	LINK nextNODE = head;
+	if(head == NULL)
+	{
+		head = cur;
+		return head;
+	}
+
+	while(nextNODE->next != NULL)
+	{
+		nextNODE = nextNODE->next;
+	}
+
+	nextNODE->next = cur;
+
+	return head;
+}
+
 void DeleteOddNode(LINK head, int sizeofNode){
 	LINK Cur = head;
 	for(int i = 0; i < sizeofNode; i++){
