@@ -27,7 +27,7 @@ void DeleteOddNode(LINK head, int sizeofNode){
 	}
 }
 
-void ReverseNode(LINK head){
+void ReverseList(LINK head){
 	LINK Cur = head;
 	while (Cur != NULL)
 	{
@@ -36,7 +36,7 @@ void ReverseNode(LINK head){
 	}
 }
 
-int LengthofNode(LINK head){
+int LengthofList(LINK head){
 	int length=1;
 	LINK Cur = head;
 	while((Cur = Cur->next) != NULL){
@@ -45,7 +45,7 @@ int LengthofNode(LINK head){
 	return length;
 }
 
-void PrintNode(LINK head){
+void PrintList(LINK head){
 	LINK Cur = head;
 	while(1){
 		printf("%d",Cur->value);

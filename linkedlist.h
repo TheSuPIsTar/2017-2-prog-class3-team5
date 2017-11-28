@@ -14,7 +14,7 @@ typedef NODE * LINK; //NODE 포인터를 링크로 재정의한다.
 
 LINK CreateNode(int input);
 void DeleteOddNode(LINK head, int sizeofNode);
-void ReverseNode(LINK head);
-int LengthofNode(LINK head);
-void PrintNode(LINK head);
+void ReverseList(LINK head);
+int LengthofList(LINK head);
+void PrintList(LINK head);
 void PrintMiddleNode(LINK head, int lengthofNode);
