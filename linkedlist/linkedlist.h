@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 struct linked_list //자기참조 구조체에 대한 정의다.
 {

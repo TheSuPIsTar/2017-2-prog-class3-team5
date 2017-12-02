@@ -10,6 +10,7 @@ int main()
 	LINK cur = NULL;
 
 	//
+	printf("please put input");
 	while (scanf("%d", &value) == 1)
 	{	
 		cur = CreateNode(value);
@@ -24,15 +25,15 @@ int main()
 
 	//PRINT LIST
 	printf("1. you have %d numbers inputed.", length);
-	printf("\n2. Reverse the numbers:");
+	printf("\n2. the Reverse ordered numbers:");
 	ReverseList(head, length);
 	printf("\n3. The middle number of the numbers:");
 	PrintMiddleNode(head, length);
-	printf("\n4. the numbers:");
+	printf("\n4. the input ordered numbers:");
 	PrintList(head);
-	printf("\ndeleted odd numbers.");
+	printf("we just deleted odd nodes.");
 	head = DeleteOddNode(head, length);
-	printf("\n5. the rest of the numbers:\n");
+	printf("\n5. the rest of the numbers:");
 	PrintList(head);
 
 	return 0;
